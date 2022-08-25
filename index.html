@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>INVOICE</title>
+</head>
+<body class="bg-dark">
+    
+    <div class="container">
+        <div class="row d-print-none">
+            <div class="col">
+                <div class="card m-5">
+                    <div class="card-header text-center bg-primary text-light">
+                        <h2>INVOICE MAKER</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="f">
+                            <div class="row">
+                                <div class="col">
+                                    <label class="form-label fs-4 text-primary" for="select">Items</label>
+                                    <select class="form-control border-primary" name="" id="select"></select>
+                                </div>
+                                <div class="col">
+                                    <label class="form-label fs-4 text-primary" for="num">Quantity</label>
+                                    <input type="number" id="num" class="border-primary form-control text-end" required>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-primary btn-lg w-100 h-100 fs-4">ADD</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row px-5">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table border-primary">
+                            <thead>
+                                <tr>
+                                    <th class="fs-5 text-primary">Items</th>
+                                    <th class="text-end fs-5 text-primary">Price</th>
+                                    <th class="text-end fs-5 text-primary">Quantity</th>
+                                    <th class="text-end fs-5 text-primary">Cost</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" class="fw-bold text-center fs-5 text-primary">Total</td>
+                                    <td class="text-end fw-bold fs-5 sum">0</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class=" card-footer text-end mt-4 d-print-none">
+                    <button class="btn btn-primary print">
+                        <i class="fa fa-solid fa-print"></i> Print
+                    </button>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./test.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
